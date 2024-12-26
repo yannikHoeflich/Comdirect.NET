@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <WarningsAsErrors>Nullable</WarningsAsErrors>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentResults" Version="3.16.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="ComdirectClient.Auth.cs">
+        <DependentUpon>ComdirectClient.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ComdirectClient.Account.cs">
+        <DependentUpon>ComdirectClient.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ComdirectClient.Depot.cs">
+        <DependentUpon>ComdirectClient.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ComdirectClient.Instrument.cs">
+        <DependentUpon>ComdirectClient.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>
